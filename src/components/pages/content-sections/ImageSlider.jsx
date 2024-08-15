@@ -41,19 +41,19 @@ const ImageSlider = () => {
         <section className='lg:pt-[var(--section-padding)] pb-[var(--section-padding)]'>
             <div className='container-custom'>
                 <div className='row-title flex justify-center w-full'>
-                    <div className='styled-col items-center justify-center'>
-                        <div className='text-center'>
+                    <div className='styled-col items-center justify-center gap-6'>
+                        {/* <div className='text-center'>
                             <div className='ornament'>
                                 <img src="/images/symbols/section-symbol.svg" alt="Ornament" />
                             </div>
-                        </div>
+                        </div> */}
                         <div className='text-center'>
                             <div className='col-row-title'>
-                                <h1 className='font-cormo'>Shop by category</h1>
+                                <h1 className='font-cormo text-amber-950'>Shop by category</h1>
                             </div>
                         </div>
                         <div className='text-center max-w-[35em] mt-[-1em]'>
-                            <p className='font-cormo italic text-[1.8rem] font-medium'>Indulge in what we offer</p>
+                            <p className='font-cormo italic text-[1.8rem] font-medium text-amber-950'>Indulge in what we offer</p>
                         </div>
                     </div>
                 </div>

@@ -48,14 +48,14 @@ const DiningIntro = () => {
                                     <span className='span-margin eyebrow primary'>My Bali Kitchen</span>
                                 </div> */}
                             <div className='col-row col-row-title medium sm:text-center lg:text-left'>
-                                <h1 className='font-cormo'>Exploring the Beauty of Adornments</h1>
+                                <h1 className='font-cormo text-amber-950'>Exploring the Beauty of Adornments</h1>
                             </div>
                             <div className='max-w-[35em] sm:text-center lg:text-left'>
                                 <p className='font-cormo text-[1.5rem] font-medium'>
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut sint veniam ipsam magni qui necessitatibus nulla perspiciatis commodi, asperiores, odit vero.
                                 </p>
                             </div>
-                            <div className={`btn w-15 btn-svg h-[3rem] border-[0.5px] border-black bg-transparent`}>
+                            <div className={`btn w-15 btn-svg h-[3rem] border-[1px] border-black bg-transparent rounded-none`}>
                                 <div className='btn-content gap-3'>
                                     <img className='size-4 first-img' src="/images/symbols/section-symbol.svg" alt="Ornament" />
                                     <span className='text-[var(--color-dark)]'>Read more</span>

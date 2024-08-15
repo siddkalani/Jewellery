@@ -1,5 +1,6 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
+import ImageGallery from './ImageGallery';
 
 const KitchenPage = () => {
     return (
@@ -11,31 +12,54 @@ const KitchenPage = () => {
                     </div>
                 </div>
                 <div className="w-full bg-custom">
-                    <div className='flex flex-col md:flex-row relative w-full gap-[3rem] h-full'>
+                    <div className='flex flex-col md:flex-row relative w-full items-center gap-[3rem] h-full'>
                         <div className='h-full flex items-center justify-center'>
                             <Parallax
-                                bgImage="https://www.thedamai.com/media/pages/dining/5d61087be9-1703335787/cookbook-1080x1440-crop-q72.jpg"
+                                bgImage="/jewellery/models/image.png"
                                 strength={100}
                             >
-                                <div className='md:h-[37rem] h-[25rem] w-[33rem]'/>
+                                <div className='md:h-[40rem] h-[25rem] w-[33rem] bg-cover' />
                             </Parallax>
                         </div>
-                        <div className='flex md:justify-center w-full relative'>
-                            <div className='flex-custom-col items-start justify-center hero-flex-gap'>
-                                <div className='text-left w-full'>
-                                <span className="span-margin eyebrow text-hero-span text-[1.15rem] text-[var(--color-white)] font-karla text-shadow">ARTICLE • OCTOBER 2022
-                                </span>
+                        <div className='flex md:justify-center w-full relative h-full'>
+                            <div className='flex-custom-col items-center md:items-start justify-center gap-4 py-4'>
+                                {/* <div className='text-left w-full'>
+                                    <span className="span-margin eyebrow text-hero-span text-[1.15rem] text-[var(--color-white)] font-karla text-shadow">• ABOUT US
+                                    </span>
+                                </div> */}
+                                <div className='col-row col-row-title medium text-shadow mb-2'>
+                                    <h2 className=''>WHO WE ARE?</h2>
                                 </div>
-                                <div className='col-row col-row-title medium'>
-                                    <h2 className=''>During the golden hour</h2>
+                                <div className='max-w-[90%] text-[1.5rem] space-y-6 py-2'>
+                                    <div className='md:text-left text-center w-full space-y-2'>
+                                        <span className="span-margin eyebrow text-hero-span text-[1.15rem] text-[var(--color-white)] font-karla text-shadow">
+                                            • ABOUT US
+                                        </span>
+                                        <p className='font-cormo font-medium'>
+                                            At Merilans, we craft timeless jewelry that celebrates life’s precious moments. Each piece is designed to tell a story, blending tradition with modern elegance.
+                                        </p>
+                                    </div>
+                                    <div className='md:text-left text-center w-full space-y-2'>
+                                        <span className="span-margin eyebrow text-hero-span text-[1.15rem] text-[var(--color-white)] font-karla text-shadow">
+                                            • ORIGIN
+                                        </span>
+                                        <p className='font-cormo font-medium'>
+                                            Founded in 1982, Merilans began as a small atelier with a passion for artistry. Today, we are a globally recognized brand, known for our unique designs and craftsmanship.
+                                        </p>
+                                    </div>
+                                    <div className='md:text-left text-center w-full space-y-2'>
+                                        <span className="span-margin eyebrow text-hero-span text-[1.15rem] text-[var(--color-white)] font-karla text-shadow">
+                                            • OUR PURPOSE
+                                        </span>
+                                        <p className='font-cormo font-medium'>
+                                            We create jewelry that goes beyond adornment. Our pieces symbolize love, commitment, and personal expression, meant to be cherished for a lifetime.
+                                        </p>
+                                    </div>
+
+
+
                                 </div>
-                                <div className='max-w-[80%] text-[1.5rem]'>
-                                    <p className='font-cormo font-medium'>
-                                        The restaurant at Damai opened in 1997. Over the decades many chefs have contributed to the kitchen, but none more than Danish master chef Per Thøstesen, formerly of Paul Bocuse in France. His cuisine merged classic French and Asian traditions, in an innovative highly local, market-fresh approach. His legacy continues today.
-                                        His 1998 book with recipies from Damai became an international bestseller. In his new award-winning cook book My Bali Kitchen Per returns to his beloved Damai with new deliciously simple Balinese brasserie recipes, for you to try at home.
-                                    </p>
-                                </div>
-                                <div className={`btn w-15 btn-svg h-[3rem] border-[1px] border-black bg-transparent rounded-none`}>
+                                <div className={`btn w-[90%] md:w-auto btn-svg h-[3rem] border-[1px] border-black bg-transparent rounded-none `}>
                                     <div className='btn-content gap-3'>
                                         <img className='size-4 first-img' src="/images/symbols/section-symbol.svg" alt="Ornament" />
                                         <span className='text-[var(--color-dark)]'>Read more</span>
@@ -47,6 +71,7 @@ const KitchenPage = () => {
                     </div>
                 </div>
             </section>
+            <ImageGallery />
         </>
     );
 };
