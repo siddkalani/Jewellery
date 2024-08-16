@@ -49,17 +49,17 @@ const ReservationSection = () => {
             <div className='py-10'>
                 <marquee behavior="scroll" direction="left" scrollamount="20">
                     <div className="flex items-center h-full w-full">
-                        <h1 className="font-karla text-shadow">
+                        <h2 className="font-karla text-shadow">
                             MERLIANS
-                        </h1>
+                        </h2>
                         <img
                             src="/jewellery/overlay-image/ring.png"
-                            className="bg-cover h-16 drop-shadow-lg"
+                            className="bg-cover h-14 drop-shadow-lg"
                             alt="Ring Image"
                         />
-                        <h1 className="font-karla text-shadow text-[#D8D8D8]">
+                        <h2 className="font-karla text-shadow text-[#D8D8D8] text-amber-950 text-amber-900">
                             SINCE 1982 // WORLD’S FINEST JEWELLARY
-                        </h1>
+                        </h2>
                     </div>
                 </marquee>
 

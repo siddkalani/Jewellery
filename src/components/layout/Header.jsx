@@ -60,7 +60,7 @@ const Header = () => {
           <div className={`lg:line hidden ${scrollState.isDarkMode ? 'bg-[var(--color-border-active)]' : 'bg-[var(--color-border-active-light)]'}`}></div> */}
           {/* will be mapped from data */}
           <ul className={`lg:flex hidden ${scrollState.isDarkMode ? 'text-[var(--color-dark)]' : 'text-[var(--color-white)]'}`}>
-            {['Featured', 'Category', 'About Us', 'Newsletter'].map((item, index) => (
+            {['Featured', 'Category', 'About Us', 'Gallery'].map((item, index) => (
               <li key={index} className='nav-a'>
                 <a href='#' className='flex-custom-center relative overflow-hidden group font-karla'>
                   <span className='text-[1.02rem] nav-span inline-block transition-all duration-300 ease-in-out transform group-hover:-translate-y-full group-hover:opacity-0'>
@@ -76,10 +76,10 @@ const Header = () => {
         </nav>
         {/* button */}
         <div>
-          <div className={`btn h-[2em] hover:shadow-md lg:h-[var(--btn-height-small)] ${scrollState.isDarkMode ? 'bg-[#38220f] text-white' : ''}`}>
+          <div className={`btn h-[2em] hover:shadow-md lg:h-[var(--btn-height-small)] rounded-none ${scrollState.isDarkMode ? 'bg-[#38220f] text-white' : ''}`}>
             <div className='btn-content'>
-              <span className='lg:flex hidden text-white'>Image Gallery</span>
-              <span className='lg:hidden text-white'>Images</span>
+              <span className='lg:flex hidden text-white'>Newsletter</span>
+              <span className='lg:hidden text-white'>Updates</span>
             </div>
           </div>
         </div>

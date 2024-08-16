@@ -89,11 +89,11 @@ const ImageSlider = () => {
             </div> */}
             <div className='w-full flex justify-center items-center'>
                 <div className="w-[90%] self-stretch flex flex-row flex-wrap items-start justify-center gap-[1.125rem] text-[1.5rem] text-black">
-                    <ImageCard />
-                    <ImageCard />
-                    <ImageCard />
-                    <ImageCard />
-                    <ImageCard />
+                    <ImageCard name='Ring' source="/jewellery/imageCard/cardRing.png"/>
+                    <ImageCard name='Bracelet' source="/jewellery/imageCard/bracelet.png"/>
+                    <ImageCard name='Earrings' source="/jewellery/imageCard/cardEar.png"/>
+                    <ImageCard name='Bracelet' source="/jewellery/imageCard/bracelet2.png"/>
+                    <ImageCard name='Necklace' source="/jewellery/imageCard/cardNecklace.png"/>
                 </div>
             </div>
         </section>

@@ -12,20 +12,18 @@ const HeroSection = () => {
           bgImageStyle={{objectFit: "cover"}}
         >
           <div style={{ height: '110vh' }} className='hero-image flex-custom-center'>
-            <div className='flex-custom-center items-center justify-start w-full h-full mt-[-10rem] ml-10'>
+            <div className='flex-custom-center items-center justify-center w-full h-full mt-[-10rem] ml-10'>
               <div className='flex-custom-col justify-center'>
                 {/* <div className='flex-custom-center'>
                   <picture>
                     <img src="/images/symbols/icon.svg" alt="" className='hero-logo filter-white flex-custom-center' />
                   </picture>
                 </div> */}
-                
                 <div className='hero-title'>
-                  <h1 className='hero-h1 mt-[-0.175em] mb-[-0.1em] font-cormo text-[var(--color-white)]'>Crafted Elegance</h1>
+                  <h1 className='text-shadow hero-h1 text-center mt-[-0.175em] mb-[-0.1em] font-cormo text-[var(--color-white)]'>Crafted Elegance</h1>
                 </div>
-                
-                <div className=''>
-                  <span className='span-margin eyebrow text-hero-span text-[1.53rem] text-[var(--color-white)] font-karla'>Discover our handcrafted jewelry <br/> designed to celebrate your most <br /> cherished moments</span>
+                <div className='flex items-center justify-center'>
+                  <span className='text-center text-[1.53rem] mt-[-1rem] text-[var(--color-white)] font-karla'>Discover our handcrafted jewellry Lorem ipsum dolor sit amet</span>
                 </div>
               </div>
             </div>

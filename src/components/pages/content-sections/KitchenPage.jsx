@@ -15,7 +15,7 @@ const KitchenPage = () => {
                     <div className='flex flex-col md:flex-row relative w-full items-center gap-[3rem] h-full'>
                         <div className='h-full flex items-center justify-center'>
                             <Parallax
-                                bgImage="/jewellery/models/image.png"
+                                bgImage="/jewellery/models/noFace.png"
                                 strength={100}
                             >
                                 <div className='md:h-[40rem] h-[25rem] w-[33rem] bg-cover' />

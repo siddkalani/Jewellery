@@ -131,11 +131,11 @@ import { faFacebook, faInstagram, faTwitter, faPinterest } from '@fortawesome/fr
             <Parallax
               strength={100}
               speed={100}
-              bgImage="https://www.thedamai.com/media/pages/dining/5975de972d-1703335793/footer-menu-1920x480-crop-q72.jpg"
+              bgImage="/jewellery/hero/heroRing.png"
               bgImageAlt="Poolside table"
               bgImageStyle={{ objectFit: "cover" }}
             >
-              <div style={{ height: '35vh' }} className='hero-image flex-custom-center'>
+              <div style={{ height: '40vh' }} className='hero-image flex-custom-center'>
                 <div className={`btn w-15 btn-svg bg-[#38220f] h-[3rem] rounded-none`}>
                   <div className='btn-content gap-1 text-[var(--copy-size-m)]'>
                     <span className='text-white font-karla'>Contact us</span>
