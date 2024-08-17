@@ -4,16 +4,21 @@ const SideNav = () => {
   return (
     <div className='side-nav-content'>
       <nav className='nav-menu'>
-        <div className='menu-title'><span className='eyebrow small'>Menu</span></div>
-        <ul className='menu-list'>
-          {["Stay", "Relax", "Dining", "Discover"].map((item, index) => (
-            <li className='menu-item' key={index}>
-              <a href="#" className='menu-link'>
-                <span className='side-nav-link'>{item}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
+      <div className='menu-title'>
+                <span className='eyebrow text-[0.8rem]'>Menu</span>
+              </div>
+              <ul className='menu-list'>
+                {[{ text: 'Featured', href: '#featured' },
+                { text: 'Category', href: '#category' },
+                { text: 'About Us', href: '#about-us' },
+                { text: 'Gallery', href: '#gallery' }].map((item, index) => (
+                  <li className='menu-item' key={index}>
+                    <a href={item.href} className='text-[#38220f] menu-link hover-circle'>
+                      <span className='side-nav-link font-cormo font-medium'>{item.text}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
       </nav>
     </div>
   )

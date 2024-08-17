@@ -2,7 +2,7 @@ import React from 'react';
 import { Parallax } from 'react-parallax';
 import ImageGallery from './ImageGallery';
 
-const KitchenPage = () => {
+const AboutUs = () => {
     return (
         <>
             <section id='about-us' className='section-padding relative'>
@@ -71,9 +71,8 @@ const KitchenPage = () => {
                     </div>
                 </div>
             </section>
-            <ImageGallery />
         </>
     );
 };
 
-export default KitchenPage;
+export default AboutUs;

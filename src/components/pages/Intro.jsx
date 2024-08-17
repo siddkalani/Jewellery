@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DiningIntro = () => {
+const Intro = () => {
     return (
         <section className='h-full w-full intro-section'>
             <div className='w-full flex items-center justify-center'>
@@ -71,4 +71,4 @@ const DiningIntro = () => {
     )
 }
 
-export default DiningIntro
+export default Intro

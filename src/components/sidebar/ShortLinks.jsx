@@ -5,20 +5,28 @@ const ShortLinks = () => {
         <>
             <div className='short-links-container'>
                 <div className='short-links-column'>
-                    <div className='column-title'><span className='eyebrow small'>stay</span></div>
-                    <ul className='short-links-list'>
-                        {["Garden villa", "Pool Studio", "Pool villa", "Master Pool Villa"].map((item, index) => (
-                            <li className='short-link-item' key={index}><a className='short-link' href="#"><span>{item}</span></a></li>
-                        ))}
-                    </ul>
-                </div>
+                <div className='column-title'><span className='eyebrow text-[0.8rem]'>Links</span></div>
+                <ul className='short-links-list'>
+                  {["E-commerce", "Jewellers", "Landing page", "Jewellers", "Jewellers"].map((item, index) => (
+                    <li className='short-link-item' key={index}>
+                      <a className='short-link font-karla' href="#">
+                        <span className='text-[1.02rem] hover-underline'>{item}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
                 <div className='short-links-column'>
-                    <div className='column-title'><span className='eyebrow small'>discover</span></div>
-                    <ul className='short-links-list'>
-                        {["Secret Waterfall", "Dolphins of Lovina", "Diving and Snorkeling"].map((item, index) => (
-                            <li className='short-link-item' key={index}><a className='short-link' href="#"><span>{item}</span></a></li>
-                        ))}
-                    </ul>
+                <div className='column-title'><span className='eyebrow text-[0.8rem]'>Other</span></div>
+                  <ul className='short-links-list'>
+                    {["Copyrights", "Privacy Policy", "Terms and Conditions", "Terms and Conditions"].map((item, index) => (
+                      <li className='short-link-item' key={index}>
+                        <a className='short-link  font-karla' href="#">
+                          <span className='hover-underline'>{item}</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
             </div>
         </>

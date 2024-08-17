@@ -1,7 +1,7 @@
 import React from 'react'
 import { Parallax } from 'react-parallax';
 
-const ReservationSection = () => {
+const Newsletter = () => {
     return (
         <>
             <section id='news' className='w-full h-full pt-[var(--section-padding)]'>
@@ -12,20 +12,24 @@ const ReservationSection = () => {
                         bgImageAlt="Poolside table"
                         bgImageStyle={{ objectFit: "cover" }}
                     >
-                        <div style={{ height: '60vh' }} className='hero-image flex-custom-center'>
-                            <div className='flex-custom-center items-end justify-start w-full h-full mt-[-10rem] ml-10'>
+                        <div className='hero-image flex-custom-center md:h-[60vh] h-[40vh]'>
+                            <div className='flex-custom-center items-end md:justify-start justify-center w-full h-full mt-[-10rem] md:ml-10 p-5 md:p-0'>
                                 <div className='flex-custom-col justify-center'>
                                     {/* header */}
                                     <div className='mb-[var(--gap)]'>
-                                        <h1 className='hero-h1 mt-[-0.175em] mb-[-0.1em] font-cormo text-[var(--color-white)] '>
+                                        <h1 className='hidden md:flex hero-h1 mt-[-0.175em] mb-[-0.1em] font-cormo text-[var(--color-white)] '>
                                             SUBSCRIBE TO OUR <br /> NEWSLETTER
                                         </h1>
+                                        <h3 className='md:hidden hero-h1 mt-[-0.175em] mb-[-0.1em] text-center md:text-left font-cormo text-[var(--color-white)] '>
+                                            SUBSCRIBE TO OUR <br /> NEWSLETTER
+                                        </h3>
                                     </div>
                                     {/* subheader */}
                                     <div className='mb-[var(--gap)]'>
-                                        <span className='span-margin eyebrow text-hero-span text-[1.53rem] text-[var(--color-white)] font-karla'>Find our premimium range</span>
+                                        <span className='hidden md:flex span-margin eyebrow text-hero-span text-[1.53rem] text-[var(--color-white)] font-karla'>Find our premimium range</span>
+                                        <span className='md:hidden span-margin eyebrow text-center text-hero-span text-[1rem] text-[var(--color-white)] font-karla'>Find our premimium range</span>
                                     </div>
-                                    <div className='flex w-full max-w-lg'>
+                                    <div className='flex w-full items-center justify-center'>
                                         <input
                                             type='email'
                                             placeholder='Enter email address...'
@@ -68,4 +72,4 @@ const ReservationSection = () => {
     )
 }
 
-export default ReservationSection
+export default Newsletter

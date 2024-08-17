@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ImageCard from '../../ImageCards/ImageCard';
+import ImageCard from '../ImageCards/ImageCard';
 
 const ImageSlider = () => {
     const images1 = [

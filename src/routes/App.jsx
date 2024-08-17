@@ -7,7 +7,7 @@ import Sidebar from '../components/sidebar/Sidebar'
 function App() {
 
   return (
-    <div className='w-full h-full'>
+    <div className='w-full h-full scrollbar'>
       <div className='w-full h-full'>
         <Header />
         <Sidebar />

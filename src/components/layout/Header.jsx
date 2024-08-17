@@ -51,10 +51,10 @@ const Header = () => {
 
         <nav className='flex items-center gap-nav'>
           <div className='cheeseburger flex md:hidden' onClick={handleOpen}>
-            <div class="cheeseburger-inner">
-              <div class={`${scrollState.isDarkMode ? "bar bg-black" : "bar"}`}></div>
-              <div class={`${scrollState.isDarkMode ? "bar bg-black" : "bar"}`}></div>
-              <div class={`${scrollState.isDarkMode ? "bar bg-black" : "bar"}`}></div>
+            <div className="cheeseburger-inner">
+              <div className={`${scrollState.isDarkMode ? "bar bg-black" : "bar"}`}></div>
+              <div className={`${scrollState.isDarkMode ? "bar bg-black" : "bar"}`}></div>
+              <div className={`${scrollState.isDarkMode ? "bar bg-black" : "bar"}`}></div>
             </div>
           </div>
           <div className={`lg:line hidden ${scrollState.isDarkMode ? 'bg-[var(--color-border-active)]' : 'bg-[var(--color-border-active-light)]'}`}></div>
