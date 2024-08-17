@@ -38,7 +38,7 @@ const ImageSlider = () => {
     };
 
     return (
-        <section className='lg:pt-[var(--section-padding)] pb-[var(--section-padding)]'>
+        <section id='category' className='lg:pt-[var(--section-padding)] pb-[var(--section-padding)]'>
             <div className='container-custom'>
                 <div className='row-title flex justify-center w-full'>
                     <div className='styled-col items-center justify-center gap-6'>
@@ -58,36 +58,62 @@ const ImageSlider = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className='container-custom flex justify-between grid-flow-col flex-wrap items-center gap-4'>
-                <div className='card-width md:card-width-large'>
-                    <picture className='h-full'>
-                        <img alt="Chef doing final touches on the dish" data-parallax-target="" className="relative z-[1] w-full h-auto" src="https://www.thedamai.com/media/pages/dining/98c9b97fa3-1703335810/wontons-540x720-crop-q72.jpg" />
-                    </picture>
-                    <p className='text-center mt-2 font-cormo text-[1.5rem] font-medium'>Earings</p>
+            <div className='w-full relative'>
+                <div className='md:flex md:flex-row flex flex-col w-full gap-[var(--container-padding)]'>
+                    <div className='wallpaper-carousel md:w-[50%] w-full'>
+                        <div className='carousel-inner' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+                            {images1.map((image, index) => (
+                                <img
+                                    key={index}
+                                    src={image}
+                                    alt={`Carousel 1 Image ${index + 1}`}
+                                    className='carousel-image'
+                                />
+                            ))}
+                        </div>
+                    </div>
+                    <div className='wallpaper-carousel md:w-[50%] w-full'>
+                        <div className='carousel-inner' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+                            {images2.map((image, index) => (
+                                <img
+                                    key={index}
+                                    src={image}
+                                    alt={`Carousel 2 Image ${index + 1}`}
+                                    className='carousel-image'
+                                />
+                            ))}
+                        </div>
+                    </div>
+                    <div className='wallpaper-carousel md:w-[50%] w-full'>
+                        <div className='carousel-inner' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+                            {images2.map((image, index) => (
+                                <img
+                                    key={index}
+                                    src={image}
+                                    alt={`Carousel 2 Image ${index + 1}`}
+                                    className='carousel-image'
+                                />
+                            ))}
+                        </div>
+                    </div>
                 </div>
-
-                <div className='card-width md:card-width-large'>
-                    <picture className='h-full'>
-                        <img alt="Chef doing final touches on the dish" data-parallax-target="" className="relative z-[1] w-full h-auto" src="https://www.thedamai.com/media/pages/dining/98c9b97fa3-1703335810/wontons-540x720-crop-q72.jpg" />
-                    </picture>
-                    <p className='text-center mt-2 font-cormo text-[1.5rem] font-medium'>Necklace</p>
+                <div className='pagination flex gap-2 justify-center items-center mt-4'>
+                    {images1.map((_, index) => (
+                        <button
+                            key={index}
+                            onClick={() => handlePaginationClick(index)}
+                            className={`h-[2.5em] w-[2.5em] rounded-full transition-[var(--animation-slider)] ${
+                                currentIndex === index
+                                    ? 'bg-[var(--color-butterflygreen-900)] text-white shadow-sm'
+                                    : ' shadow-inner text-gray-700 hover:bg-gray-300 box-sha'
+                            }`}
+                        >
+                            {index + 1}
+                        </button>
+                    ))}
                 </div>
-
-                <div className='card-width md:card-width-large'>
-                    <picture className='h-full'>
-                        <img alt="Chef doing final touches on the dish" data-parallax-target="" className="relative z-[1] w-full h-auto" src="https://www.thedamai.com/media/pages/dining/98c9b97fa3-1703335810/wontons-540x720-crop-q72.jpg" />
-                    </picture>
-                    <p className='text-center mt-2 font-cormo text-[1.5rem] font-medium'>Bracelte</p>
-                </div>
-
-                <div className='card-width md:card-width-large'>
-                    <picture className='h-full'>
-                        <img alt="Chef doing final touches on the dish" data-parallax-target="" className="relative z-[1] w-full h-auto" src="https://www.thedamai.com/media/pages/dining/98c9b97fa3-1703335810/wontons-540x720-crop-q72.jpg" />
-                    </picture>
-                    <p className='text-center mt-2 font-cormo text-[1.5rem] font-medium'>huhu</p>
-                </div>
-            </div> */}
-            <div className='w-full flex justify-center items-center'>
+            </div>
+            {/* <div className='w-full flex justify-center items-center'>
                 <div className="w-[90%] self-stretch flex flex-row flex-wrap items-start justify-center gap-[1.125rem] text-[1.5rem] text-black">
                     <ImageCard name='Ring' source="/jewellery/imageCard/cardRing.png"/>
                     <ImageCard name='Bracelet' source="/jewellery/imageCard/bracelet.png"/>
@@ -95,7 +121,7 @@ const ImageSlider = () => {
                     <ImageCard name='Bracelet' source="/jewellery/imageCard/bracelet2.png"/>
                     <ImageCard name='Necklace' source="/jewellery/imageCard/cardNecklace.png"/>
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 };

@@ -3,7 +3,8 @@ import { Parallax } from 'react-parallax';
 
 const HeroSection = () => {
   return (
-    <section className='w-full h-full'>
+    
+    <section id="featured" className='w-full h-full'>
       <div className='flex-custom-center h-full w-full'>
         <Parallax 
           strength={400} 
@@ -12,8 +13,8 @@ const HeroSection = () => {
           bgImageStyle={{objectFit: "cover"}}
         >
           <div style={{ height: '110vh' }} className='hero-image flex-custom-center'>
-            <div className='flex-custom-center items-center justify-center w-full h-full mt-[-10rem] ml-10'>
-              <div className='flex-custom-col justify-center'>
+            <div className='flex-custom-center items-center justify-center w-full h-full mt-[-10rem]'>
+              <div className='flex-custom-col justify-center items-center'>
                 {/* <div className='flex-custom-center'>
                   <picture>
                     <img src="/images/symbols/icon.svg" alt="" className='hero-logo filter-white flex-custom-center' />
@@ -38,6 +39,7 @@ const HeroSection = () => {
         </picture>
       </div> */}
     </section>
+   
   )
 }
 

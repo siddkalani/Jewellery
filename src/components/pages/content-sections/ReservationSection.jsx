@@ -4,7 +4,7 @@ import { Parallax } from 'react-parallax';
 const ReservationSection = () => {
     return (
         <>
-            <section className='w-full h-full'>
+            <section id='news' className='w-full h-full pt-[var(--section-padding)]'>
                 <div className='flex-custom-center h-full w-full'>
                     <Parallax
                         strength={200}

@@ -47,10 +47,10 @@ const DiningIntro = () => {
                             {/* <div className='text-left w-full'>
                                     <span className='span-margin eyebrow primary'>My Bali Kitchen</span>
                                 </div> */}
-                            <div className='col-row col-row-title medium sm:text-center lg:text-left'>
+                            <div className='col-row col-row-title medium text-center md:text-left'>
                                 <h1 className='font-cormo text-amber-950'>Exploring the Beauty of Adornments</h1>
                             </div>
-                            <div className='max-w-[35em] sm:text-center lg:text-left'>
+                            <div className='max-w-[35em] text-center md:text-left'>
                                 <p className='font-cormo text-[1.5rem] font-medium'>
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut sint veniam ipsam magni qui necessitatibus nulla perspiciatis commodi, asperiores, odit vero.
                                 </p>

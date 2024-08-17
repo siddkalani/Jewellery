@@ -411,7 +411,7 @@
         left: 0;
         width: 100%;
         height: 1px;
-        background-color: var(--color-border-light);
+        background-color: var(--color-border);
 
     }
 
@@ -425,6 +425,8 @@
         transition: background-color var(--animation-primary);
     }
 
+    /* btn animation */
+    
     /* sidebar */
     .sidebar {
         transition: var(--animation-slow);
@@ -532,7 +534,6 @@
     }
 
     .side-nav-link {
-        font-family: 'Kaftan Serif', serif;
         font-weight: 400;
         font-size: calc(var(--title-size) * 0.5);
         line-height: 1.2;
@@ -548,6 +549,7 @@
         background-color: var(--color-border-active);
         transition: var(--animation-primary);
     }
+    
 
     .short-links-container {
         display: flex;
@@ -588,7 +590,7 @@
     }
 
     .short-link span {
-        font-size: var(--copy-size-m);
+        font-size: 1.02rem;
         line-height: 1;
 
         white-space: nowrap;
@@ -751,6 +753,54 @@
         transform: rotate(0.001deg);
         transition: transform var(--animation-smooth);
     }
+    /* footer animation */
+    /* underline */
+    .hover-underline {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      
+      .hover-underline::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -2px;
+        left: 0;
+        background-color: currentColor;
+        transition: width 0.3s ease-in-out;
+      }
+      
+      .hover-underline:hover::after {
+        width: 100%;
+      }
+      /* circle active state */
+      .hover-circle {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+      
+      .hover-circle::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 40%;
+        right: 0;
+        background-color: #38220f;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+        transform: translateX(5px);
+      }
+      
+      .hover-circle:hover::before {
+        width: 6px;
+        height: 6px;
+        transform: translateX(0);
+      }
+      
 }
 
 /* root css */

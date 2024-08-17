@@ -2,10 +2,17 @@ import PropTypes from "prop-types";
 
 const ImageGallery = ({ className = "" }) => {
     return (
+        <>
         <section
-            className={`self-stretch flex flex-col items-center justify-center pb-[var(--section-padding)]`}
+            className={`self-stretch flex flex-col relative items-center justify-center pt-[var(--section-padding)]`}
+            id="gallery"
         >
-            <div className="w-[90%]">
+            <div className='border-top-ornament'>
+                <div className="ornament">
+                    <img src="/images/symbols/KitchenSymbol.svg" alt="Kitchen Symbol" />
+                </div>
+            </div>
+            <div className="w-[90%] mt-[-2rem]">
                 <div className='row-title flex justify-center w-full'>
                     <div className='styled-col items-center justify-center gap-6'>
                         {/* <div className='text-center'>
@@ -62,6 +69,7 @@ const ImageGallery = ({ className = "" }) => {
                 </div>
             </div>
         </section>
+        </>
     );
 };
 

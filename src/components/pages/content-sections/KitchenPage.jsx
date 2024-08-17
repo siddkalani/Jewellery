@@ -5,7 +5,7 @@ import ImageGallery from './ImageGallery';
 const KitchenPage = () => {
     return (
         <>
-            <section className='section-padding relative'>
+            <section id='about-us' className='section-padding relative'>
                 <div className='border-top-ornament'>
                     <div className="ornament">
                         <img src="/images/symbols/KitchenSymbol.svg" alt="Kitchen Symbol" />
@@ -18,7 +18,7 @@ const KitchenPage = () => {
                                 bgImage="/jewellery/models/noFace.png"
                                 strength={100}
                             >
-                                <div className='md:h-[40rem] h-[25rem] w-[33rem] bg-cover' />
+                                <div className='md:h-[40rem] h-[25rem] md:w-[33rem] w-[100vw] bg-cover' />
                             </Parallax>
                         </div>
                         <div className='flex md:justify-center w-full relative h-full'>
