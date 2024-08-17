@@ -13,7 +13,7 @@ const Newsletter = () => {
                         bgImageStyle={{ objectFit: "cover" }}
                     >
                         <div className='hero-image flex-custom-center md:h-[60vh] h-[40vh]'>
-                            <div className='flex-custom-center items-end md:justify-start justify-center w-full h-full mt-[-10rem] md:ml-10 p-5 md:p-0'>
+                            <div className='flex-custom-center md:items-end md:justify-start justify-center w-full h-full md:mt-[-10rem] md:ml-10 p-5 md:p-0'>
                                 <div className='flex-custom-col justify-center'>
                                     {/* header */}
                                     <div className='mb-[var(--gap)]'>
