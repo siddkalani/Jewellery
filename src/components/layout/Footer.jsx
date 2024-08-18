@@ -1,10 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Parallax } from 'react-parallax';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter, faPinterest } from '@fortawesome/free-brands-svg-icons';
+import { useEffect } from 'react';
 
 
 const Footer = () => {
+  const [parallaxStrength, setParallaxStrength] = useState(100);
+  
+  useEffect(() => {
+    const updateParallaxStrength = () => {
+      if (window.innerWidth <= 640) { // sm breakpoint
+        setParallaxStrength(0);
+      } else {
+        setParallaxStrength(100);
+      }
+    };
+
+    updateParallaxStrength(); // Set the initial value
+    window.addEventListener('resize', updateParallaxStrength); // Update on window resize
+
+    return () => window.removeEventListener('resize', updateParallaxStrength); // Cleanup
+  }, []);
+
   return (
     <>
       <footer className='p-0 relative'>
@@ -118,7 +136,7 @@ const Footer = () => {
       <section className='w-full h-full'>
         <div className='flex-custom-center h-full w-full relative'>
           <Parallax
-            strength={100}
+            strength={parallaxStrength}
             speed={100}
             bgImage="/jewellery/hero/heroRing.png"
             bgImageAlt="Poolside table"

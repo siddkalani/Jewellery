@@ -1,13 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useEffect } from 'react';
 import { Parallax } from 'react-parallax';
 
 const Newsletter = () => {
+    const [parallaxStrength, setParallaxStrength] = useState(200);
+  
+    useEffect(() => {
+      const updateParallaxStrength = () => {
+        if (window.innerWidth <= 640) { // sm breakpoint
+          setParallaxStrength(0);
+        } else {
+          setParallaxStrength(200);
+        }
+      };
+  
+      updateParallaxStrength(); // Set the initial value
+      window.addEventListener('resize', updateParallaxStrength); // Update on window resize
+  
+      return () => window.removeEventListener('resize', updateParallaxStrength); // Cleanup
+    }, []);
+  
     return (
         <>
             <section id='news' className='w-full h-full pt-[var(--section-padding)]'>
                 <div className='flex-custom-center h-full w-full'>
                     <Parallax
-                        strength={200}
+                        strength={parallaxStrength}
                         bgImage="/jewellery/newsLetter/News.png"
                         bgImageAlt="Poolside table"
                         bgImageStyle={{ objectFit: "cover" }}

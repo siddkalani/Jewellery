@@ -1,8 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Parallax } from 'react-parallax';
 import ImageGallery from './ImageGallery';
+import { useEffect } from 'react';
 
 const AboutUs = () => {
+    const [parallaxStrength, setParallaxStrength] = useState(100);
+  
+    useEffect(() => {
+      const updateParallaxStrength = () => {
+        if (window.innerWidth <= 640) { // sm breakpoint
+          setParallaxStrength(0);
+        } else {
+          setParallaxStrength(100);
+        }
+      };
+  
+      updateParallaxStrength(); // Set the initial value
+      window.addEventListener('resize', updateParallaxStrength); // Update on window resize
+  
+      return () => window.removeEventListener('resize', updateParallaxStrength); // Cleanup
+    }, []);
+  
     return (
         <>
             <section id='about-us' className='section-padding relative'>
@@ -16,7 +34,7 @@ const AboutUs = () => {
                         <div className='h-full flex items-center justify-center'>
                             <Parallax
                                 bgImage="/jewellery/models/noFace.png"
-                                strength={100}
+                                strength={parallaxStrength}
                             >
                                 <div className='md:h-[40rem] h-[25rem] md:w-[33rem] w-[100vw] bg-cover' />
                             </Parallax>
