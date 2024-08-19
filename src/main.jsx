@@ -10,18 +10,23 @@ import { Provider } from 'react-redux'
 import Main from './components/layout/Main.jsx';
 import hotelStore from './store/store.js';
 import SmoothScrolling from './components/scroll/SmoothScrolling.jsx';
+import PageReveal from './components/pageReveal/pageReveal.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <PageReveal />,
+  },
+  {
+    path:'/main',
+    element:<App/>,
     children: [
       {
-        path: "/",
+        path: "/main",
         element: <Main />
       },
     ]
-  },
+  }
 ]);
 
 

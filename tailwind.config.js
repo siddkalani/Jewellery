@@ -10,7 +10,8 @@ export default {
         'abc-whyte': ['ABC Whyte', 'sans-serif'],
         'kaftan' : ['Kaftan Serif', 'serif'],
         'karla' : ['Karla','sans-serif'],
-        'cormo' : ['Cormorant Garamond', 'serif']
+        'cormo' : ['Cormorant Garamond', 'serif'],
+        'rale': ['Raleway', 'sans-serif']
       }
     },
     // screens: {

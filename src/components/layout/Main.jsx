@@ -9,7 +9,7 @@ import Newsletter from '../pages/Newsletter'
 const Main = () => {
   return (
 
-    <div className='w-full h-full relative'>
+    <div className='w-full h-full'>
       <HeroSection />
       <Intro/>
       <ImageSlider />
