@@ -53,14 +53,14 @@ const PageReveal = () => {
     <div className="absolute inset-0 w-full h-full overflow-hidden">
       <img
         ref={imageRef}
-        src="/jewellery/hero/HeroJewellery.jpg"
+        src="https://cdn.alromaizan.com/image/upload/v1682709593/media/blog/unlocking-the-secrets-to-layering-your-gold-jewellery-like-a-pro.jpg"
         alt="Jewelry"
-        className="w-full h-full object-cover filter blur-md "
+        className="w-full h-full object-cover filter"
       />
     </div>
     <h1
   ref={textRef}
-  className="relative z-10 flex flex-col items-center justify-center h-full font-rale text-3xl md:text-5xl font-normal tracking-wide text-shadow bg-gradient-to-r from-white via-yellow-500 to-black bg-clip-text text-transparent"
+  className="relative z-10 flex flex-col items-end justify-end h-full font-rale text-3xl md:text-5xl font-normal tracking-wide text-shadow bg-gradient-to-r from-white to-slate-300 mr-[5rem] mt-[-5rem] bg-clip-text text-transparent"
 >
   Welcome to, <br className='hidden md:block' />
   <b>Kay Jewellers</b>
