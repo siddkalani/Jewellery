@@ -54,7 +54,7 @@ const Footer = () => {
               <div className="flex flex-col min-w-[10em]">
                 <div className='column-title'><span className='eyebrow text-[0.8rem]'>Links</span></div>
                 <ul className='short-links-list'>
-                  {["E-commerce", "Jewellers", "Landing page", "Jewellers", "Jewellers"].map((item, index) => (
+                  {["E-commerce", "Jewellers", "Landing page", "Jewellers"].map((item, index) => (
                     <li className='short-link-item' key={index}>
                       <a className='short-link font-karla' href="#">
                         <span className='text-[1.02rem] hover-underline'>{item}</span>
@@ -67,7 +67,7 @@ const Footer = () => {
                 <div className='short-links-column'>
                   <div className='column-title'><span className='eyebrow text-[0.8rem]'>Other</span></div>
                   <ul className='short-links-list'>
-                    {["Copyrights", "Privacy Policy", "T&C", "T&C"].map((item, index) => (
+                    {["Copyrights", "Privacy Policy", "T&C"].map((item, index) => (
                       <li className='short-link-item' key={index}>
                         <a className='short-link  font-karla' href="#">
                           <span className='hover-underline'>{item}</span>
