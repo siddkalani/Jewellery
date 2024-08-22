@@ -21,12 +21,11 @@ const PageReveal = () => {
     )
       .fromTo(
         textRef.current,
-        { y: 50, opacity: 0, letterSpacing: '0.05em' },
-        { y: 0, opacity: 1, letterSpacing: '0.1em', duration: 0.8, ease: 'power4.out' },
+        { opacity: 0, scale: 0.8 },
+        { opacity: 1, scale: 1, duration: 0.8, ease: 'power4.out' },
         '-=0.5'
       )
       .to(textRef.current, {
-        y: -100,
         opacity: 0,
         duration: 1,
         delay: 0.5,
@@ -49,20 +48,22 @@ const PageReveal = () => {
   return (
     <div ref={containerRef} className="relative h-screen overflow-hidden">
       {/* Image and Text Section */}
-      <div className="flex justify-center items-center h-screen bg-[#d9b99b]">
-        <div className="relative">
+      <div className="flex justify-center items-center h-screen bg-[#38220f]">
+        <div className="relative w-[30%] mx-auto">
           <img
             ref={imageRef}
-            src="/jewellery/gallery/gallery1.png"
+            src="/jewellery/gallery/gallery2.png"
             alt="Jewelry"
-            className="relative z-0 w-[50%] h-auto mx-auto"
+            className="w-full h-auto"
           />
-          <h1
-            ref={textRef}
-            className="text-center font-rale top-full mt-4 text-[#38220f] text-3xl md:text-4xl font-normal text-shadow tracking-wide z-20"
-          >
-            Welcome to, <br className='flex'/> <i> Kay Jewellers</i>
-          </h1>
+         <h1
+  ref={textRef}
+  className="absolute inset-0 flex flex-col items-center justify-end font-rale text-3xl md:text-5xl font-normal tracking-wide text-shadow bg-gradient-to-r from-black via-white to-black bg-clip-text text-transparent"
+>
+  Welcome to, <br className='hidden md:block'/> 
+  <i>Kay Jewellers</i>
+</h1>
+
         </div>
       </div>
     </div>

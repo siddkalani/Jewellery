@@ -54,7 +54,8 @@ const AboutUs = () => {
                                             • ABOUT US
                                         </span>
                                         <p className='font-cormo font-medium'>
-                                            At Merilans, we craft timeless jewelry that celebrates life’s precious moments. Each piece is designed to tell a story, blending tradition with modern elegance.
+                                        We specialize in curating and crafting jewelry that embodies elegance and quality. As importers and manufacturers, our pieces are a perfect blend of tradition and contemporary design, created to enhance your unique style and celebrate life’s special moments.
+
                                         </p>
                                     </div>
                                     <div className='md:text-left text-center w-full space-y-2'>
@@ -62,7 +63,8 @@ const AboutUs = () => {
                                             • ORIGIN
                                         </span>
                                         <p className='font-cormo font-medium'>
-                                            Founded in 1982, Merilans began as a small atelier with a passion for artistry. Today, we are a globally recognized brand, known for our unique designs and craftsmanship.
+                                        Founded in 2024 by <strong className='font-bold'>Abhishekh Pandey</strong>, along with co-founders <strong className='font-bold'>Khushal Makawana</strong> and <strong className='font-bold'>Pravin Pandey</strong>, our journey began with a commitment to delivering timeless beauty. Starting as a vision to bridge tradition and modern craftsmanship, we have expanded our reach globally, bringing exceptional jewelry to clients worldwide.
+
                                         </p>
                                     </div>
                                     <div className='md:text-left text-center w-full space-y-2'>
@@ -70,7 +72,8 @@ const AboutUs = () => {
                                             • OUR PURPOSE
                                         </span>
                                         <p className='font-cormo font-medium'>
-                                            We create jewelry that goes beyond adornment. Our pieces symbolize love, commitment, and personal expression, meant to be cherished for a lifetime.
+                                        We believe that jewelry is more than just an accessory—it’s an expression of identity, love, and cherished memories. Our creations are designed to stand the test of time, serving as treasured pieces that mark life’s significant milestones.
+
                                         </p>
                                     </div>
 

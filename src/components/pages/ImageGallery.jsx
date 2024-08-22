@@ -26,7 +26,8 @@ const ImageGallery = ({ className = "" }) => {
                             </div>
                         </div>
                         <div className='text-center max-w-[35em] mt-[-1em]'>
-                            <p className='font-cormo italic text-[1.8rem] font-medium'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, cupiditate quod.</p>
+                            <p className='font-cormo italic text-[1.8rem] font-medium'>Explore our gallery of treasures—each piece a testament to artistry and timeless elegance.
+                            </p>
                         </div>
                     </div>
                 </div>

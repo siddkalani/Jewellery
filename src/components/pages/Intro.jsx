@@ -52,7 +52,8 @@ const Intro = () => {
                             </div>
                             <div className='max-w-[35em] text-center md:text-left'>
                                 <p className='font-cormo text-[1.5rem] font-medium'>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut sint veniam ipsam magni qui necessitatibus nulla perspiciatis commodi, asperiores, odit vero.
+                                "Where elegance meets craftsmanship, every piece tells a story of timeless beauty. Adorn yourself with treasures that capture the essence of grace, reflecting the sparkle within. Our jewelry is more than an accessory—it's a statement of sophistication, crafted to perfection."
+
                                 </p>
                             </div>
                             <div className={`btn w-15 btn-svg h-[3rem] border-[1px] border-black bg-transparent rounded-none`}>
