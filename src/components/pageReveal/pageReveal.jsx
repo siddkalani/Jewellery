@@ -42,30 +42,33 @@ const PageReveal = () => {
         delay: 0.5,
         ease: 'power2.inOut',
       });
-      
+
   }, []);
 
   return (
     <div ref={containerRef} className="relative h-screen overflow-hidden">
       {/* Image and Text Section */}
-      <div className="flex justify-center items-center h-screen bg-[#38220f]">
-        <div className="relative w-[30%] mx-auto">
-          <img
-            ref={imageRef}
-            src="/jewellery/gallery/gallery2.png"
-            alt="Jewelry"
-            className="w-full h-auto"
-          />
-         <h1
+      <div className="flex justify-center items-center h-screen">
+  <div className="relative w-screen h-screen mx-auto">
+    <div className="absolute inset-0 w-full h-full overflow-hidden">
+      <img
+        ref={imageRef}
+        src="/jewellery/hero/HeroJewellery.jpg"
+        alt="Jewelry"
+        className="w-full h-full object-cover filter blur-md "
+      />
+    </div>
+    <h1
   ref={textRef}
-  className="absolute inset-0 flex flex-col items-center justify-end font-rale text-3xl md:text-5xl font-normal tracking-wide text-shadow bg-gradient-to-r from-black via-white to-black bg-clip-text text-transparent"
+  className="relative z-10 flex flex-col items-center justify-center h-full font-rale text-3xl md:text-5xl font-normal tracking-wide text-shadow bg-gradient-to-r from-white via-yellow-500 to-black bg-clip-text text-transparent"
 >
-  Welcome to, <br className='hidden md:block'/> 
-  <i>Kay Jewellers</i>
+  Welcome to, <br className='hidden md:block' />
+  <b>Kay Jewellers</b>
 </h1>
 
-        </div>
-      </div>
+  </div>
+</div>
+
     </div>
   );
 };

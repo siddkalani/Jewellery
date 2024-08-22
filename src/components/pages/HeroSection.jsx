@@ -38,7 +38,7 @@ const HeroSection = () => {
                   <h1 className='text-shadow hero-h1 text-center mt-[-0.175em] mb-[-0.1em] font-cormo text-[var(--color-white)]'>Crafted Elegance</h1>
                 </div>
                 <div className='flex items-center justify-center'>
-                  <span className='text-center text-[1.53rem] mt-[-1rem] text-[var(--color-white)] font-karla'>Discover our handcrafted jewellery Lorem ipsum dolor sit amet</span>
+                  <span className='text-center text-[1.53rem] mt-[-1rem] text-[var(--color-white)] font-karla'>Discover our handcrafted jewellery</span>
                 </div>
               </div>
             </div>

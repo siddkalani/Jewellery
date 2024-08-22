@@ -80,7 +80,7 @@ const Newsletter = () => {
                             alt="Ring Image"
                         />
                         <h2 className="font-karla text-shadow text-[#D8D8D8] text-amber-950 text-amber-900">
-                            SINCE 1982 // WORLD’S FINEST JEWELLARY
+                            SINCE 2024 // WORLD’S FINEST JEWELLARY
                         </h2>
                     </div>
                 </marquee>
