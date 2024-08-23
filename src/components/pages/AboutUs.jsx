@@ -80,13 +80,13 @@ const AboutUs = () => {
 
 
                                 </div>
-                                <div className={`btn w-[90%] md:w-auto btn-svg h-[3rem] border-[1px] border-black bg-transparent rounded-none `}>
+                                {/* <div className={`btn w-[90%] md:w-auto btn-svg h-[3rem] border-[1px] border-black bg-transparent rounded-none `}>
                                     <div className='btn-content gap-3'>
                                         <img className='size-4 first-img' src="/images/symbols/section-symbol.svg" alt="Ornament" />
                                         <span className='text-[var(--color-dark)]'>Read more</span>
                                         <img className='size-4 second-img' src="/images/symbols/section-symbol.svg" alt="Ornament" />
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

@@ -5,41 +5,23 @@ const ImageSlider = () => {
     const images1 = [
         '/images/jewellery/exclusive/14.png',
         '/images/jewellery/exclusive/white.jpeg',
-       
         '/images/jewellery/earrings/4.png',
         '/images/jewellery/exclusive/pendal.png',
-        
-        
-        // '/images/carousel/section-1/image5.jpg',
-        // '/images/carousel/section-1/image6.jpg',
-        // '/images/carousel/section-1/image7.jpg',
     ];
 
     const images2 = [
         '/images/jewellery/exclusive/24.png',
-        '/images/jewellery/earrings/2.png',
-        
-        '/images/jewellery/exclusive/12.png',
         '/images/jewellery/exclusive/white2.png',
+        '/images/jewellery/earrings/2.png',
+        '/images/jewellery/exclusive/12.png',
         
-        
-        
-        // '/images/carousel/section-2/image5.jpg',
-        // '/images/carousel/section-2/image6.jpg',
-        // '/images/carousel/section-2/image7.jpg',
     ];
 
     const images3 = [
         '/images/jewellery/exclusive/exclusive2.jpeg',
         '/images/jewellery/necklace/necklace4.png',
-        
         '/images/jewellery/earrings/5.png',
         '/images/jewellery/exclusive/10.png',
-       
-        
-        // '/images/carousel/section-2/image5.jpg',
-        // '/images/carousel/section-2/image6.jpg',
-        // '/images/carousel/section-2/image7.jpg',
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);

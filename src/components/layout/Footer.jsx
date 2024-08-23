@@ -89,7 +89,7 @@ const Footer = () => {
                   <ul className='short-links-list'>
                     {["1001, Marol, Emperial heights", "Mumbai, Maharshtra"].map((item, index) => (
                       <li className='short-link-item' key={index}>
-                        <a className='short-link  font-karla' href="#">
+                        <a className='short-link  font-karla' href="">
                           <span className='hover-underline'>{item}</span>
                         </a>
                       </li>
@@ -98,7 +98,7 @@ const Footer = () => {
                   <ul className='short-links-list'>
                     {["T: +62 877 888 41008", "E: company@jewellery.com"].map((item, index) => (
                       <li className='short-link-item' key={index}>
-                        <a className='short-link  font-karla' href="#">
+                        <a className='short-link  font-karla' href="">
                           <span className='hover-underline'>{item}</span>
                         </a>
                       </li>
