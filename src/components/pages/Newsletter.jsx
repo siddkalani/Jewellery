@@ -72,7 +72,7 @@ const Newsletter = () => {
                 <marquee behavior="scroll" direction="left" scrollamount="20">
                     <div className="flex items-center h-full w-full">
                         <h2 className="font-karla text-shadow">
-                            MERLIANS
+                           KAAAY JEWELLERS
                         </h2>
                         <img
                             src="/jewellery/overlay-image/ring.png"
@@ -80,7 +80,7 @@ const Newsletter = () => {
                             alt="Ring Image"
                         />
                         <h2 className="font-karla text-shadow text-[#D8D8D8] text-amber-950 text-amber-900">
-                            SINCE 2024 // WORLD’S FINEST JEWELLARY
+                            SINCE 2024 // WORLD’S FINEST JEWELLERY
                         </h2>
                     </div>
                 </marquee>

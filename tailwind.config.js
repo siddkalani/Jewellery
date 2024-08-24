@@ -11,7 +11,9 @@ export default {
         'kaftan' : ['Kaftan Serif', 'serif'],
         'karla' : ['Karla','sans-serif'],
         'cormo' : ['Cormorant Garamond', 'serif'],
-        'rale': ['Raleway', 'sans-serif']
+        'rale': ['Raleway', 'sans-serif'],
+        'bodoni':['Bodoni Moda SC', 'serif'],
+        'rollgates':['Rollgates Luxury','serif']
       }
     },
     // screens: {
