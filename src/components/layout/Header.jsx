@@ -43,11 +43,11 @@ const Header = () => {
     >
       <div className='flex items-center bg-transparent justify-between w-full p-nav'>
 
-        <div className='hidden md:flex'>
+        {/* <div className='hidden md:flex'>
           <picture>
             <img src="/images/symbols/icon.svg" alt="" className={`hero-logo flex-custom-center ${!scrollState.isDarkMode && 'filter-white'}`} />
           </picture>
-        </div>
+        </div> */}
 
         <nav className='flex items-center gap-nav'>
           <div className='cheeseburger flex md:hidden' onClick={handleOpen}>
@@ -57,7 +57,7 @@ const Header = () => {
               <div className={`${scrollState.isDarkMode ? "bar bg-black" : "bar"}`}></div>
             </div>
           </div>
-          <div className={`lg:line hidden ${scrollState.isDarkMode ? 'bg-[var(--color-border-active)]' : 'bg-[var(--color-border-active-light)]'}`}></div>
+          {/* <div className={`lg:line hidden ${scrollState.isDarkMode ? 'bg-[var(--color-border-active)]' : 'bg-[var(--color-border-active-light)]'}`}></div> */}
           {/* will be mapped from data */}
           <ul className={`lg:flex logo hidden ${scrollState.isDarkMode ? 'text-[var(--color-dark)]' : 'text-[var(--color-white)]'}`}>
             {[
@@ -83,12 +83,12 @@ const Header = () => {
         {/* button */}
         <div>
           <div className={`btn h-[2em] hover:shadow-2xl hover:scale-105 hover:bg-opacity-90 transition-all duration-300 ease-in-out lg:h-[var(--btn-height-small)] rounded-none ${scrollState.isDarkMode ? 'bg-[#38220f] text-white' : ''}`}>
-            <div className='btn-content'>
+            {/* <div className='btn-content'>
               <a href="#news">
                 <span className='lg:flex hidden text-white'>Newsletter</span>
                 <span className='lg:hidden text-white'>Updates</span>
               </a>
-            </div>
+            </div> */}
           </div>
 
         </div>

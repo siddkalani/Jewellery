@@ -5,6 +5,7 @@ import ImageSlider from '../pages/ImageSlider'
 import AboutUs from '../pages/AboutUs'
 import ImageGallery from '../pages/ImageGallery'
 import Newsletter from '../pages/Newsletter'
+import ServiceHero from '../pages/ServiceHero'
 
 const Main = () => {
   return (
